@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+    /* background: #4b80a9; */
+  }
+  nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0 ;
+    z-index: 1000;  
+  }
+  #navbar-scroll{
+    height:50px;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-style:italic;
+    font-family:cursive;
+  
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  position: relative;
+  left: 0;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  } 
+ nav a.active, nav a:hover{
+    background: #1b9bff;
+    transition: .5s;
+    color: white;
+}
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }  
+  section{  
+    background-size: cover;
+    height: calc(90vh - 80px);
+  }
+  /* CSS for About Me Section */
+
+.about-section {
+    padding: 50px 20px; /* Added padding on smaller screens */
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* background-color: #1b9bff; */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  
+  .about-content,
+  .about-image {
+    width: 100%;
+  }
+  
+  .about-content {
+    margin-top: 10%;
+    margin-bottom: 20px; /* Added margin between content and image on smaller screens */
+  }
+  
+  .about-image img {
+    max-width: 100%; 
+    height: auto;
+    border: 2px solid rgb(214, 208, 208);
+    display: block;
+    margin-top: 20px; /* Added margin to separate image from content on smaller screens */
+  border-left-color: #0082e6;
+  border-right-color: rgb(114, 182, 235);
+  border-bottom-color: green;
+  border-top-color:rgb(61, 123, 216);
+
+}
+  
+  /* Media query for smaller screens */
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row; /* Display items side by side on larger screens */
+      align-items: center;
+    }
+  
+    .about-content {
+      flex: 1; /* Take up available space */
+      margin-right: 20px; /* Added margin between content and image on larger screens */
+    }
+  
+    .about-image {
+      flex: 1; 
+      /* Take up available space */
+    
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+.about-image{
+  margin-left: 1%; 
+}
+  }
+  section {
+    background: url("../img/bg1.jpg") no-repeat center center/cover;
+    background-size: cover;
+height: 87vh;     
+}
+  
+  .about-section {
+    padding: 50px 10px; /* Added padding on smaller screens */
+    /* background-color: #f5f5f5; */
+  
+}
+  
+  .container {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  
+  .about-content,
+  .about-image {
+    width: 100%;
+  }
+  
+  .about-content {
+    margin-bottom: 30px; /* Added margin between content and image on smaller screens */
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-top: 20px; /* Added margin to separate image from content on smaller screens */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row; /* Display items side by side on larger screens */
+      align-items: center;
+    }
+  
+    .about-content {
+      flex: 1; /* Take up available space */
+      margin-right: 20px; /* Added margin between content and image on larger screens */
+    }
+  
+    .about-image {
+      flex: 1; /* Take up available space */
+    }
+  }
+  .about-content p{
+    color: white;
+    font-size: 100%;
+    text-justify:inter-word;
+  }
+  button{
+    background: #0082e6;
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  .about-section{
+    background-color: red;
+    background-repeat: no-repeat;
+  color:rgb(4, 4, 4);
+  }
+  /* For webkit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2172c4; /* Set the color of the scrollbar thumb */
+  border-radius: 10px; /* Set the border radius of the scrollbar thumb */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+footer{
+  padding: 15px;
+  color: white; 
+  background: #0082e6;
+  text-align: center;
+  /* position: sticky; */
+  bottom: 0px;
+}
+#typing-text{
+  color: rgb(236, 223, 223);
+  font-size: 25px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  /* background-color: #0082e6; */
+}
+
+#contact h4 {
+  margin: 10px 0;
+  margin-left: 47%;
+  font-size: 22px; 
+}
+.contact-box{
+  display: flex; 
+}
+.social-media{
+  padding-left: 2%;
+  margin-top: 1%;  
+}
+.social-media img{
+  height: 60px;
+} 
+.social-media img:hover{
+  cursor: pointer;
+  background-color: transparent; 
+}
+.social-media div{
+  margin-top: 20%;
+  margin-left: 20%;
+}
+.social-media b{
+  display: block;
+  margin-left: 35px; 
+  font-size: 20px;
+}
