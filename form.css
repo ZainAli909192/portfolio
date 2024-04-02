@@ -1,0 +1,118 @@
+
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 300px;
+    margin: 0 4rem;
+    padding: 20px;
+    margin-top: 4rem; 
+  }
+  main form{
+    margin: 0px auto; 
+    /* margin-top: -40px;   */
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], 
+  input[type="password"],
+  input[type="file"],
+  input, select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+  }
+  input:focus,
+  input:valid,
+  textarea:focus
+  { 
+    outline-color: #3250ea;
+  }
+  .success{
+    color: #4CAF50;
+    animation: shake 0.3s ease-in-out 3;
+    /* opacity: 0; */
+  }
+  @keyframes shake {
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(-50px);
+    }
+    75%{
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100%{
+    }
+  }
+  .error {
+    color: red;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Hide the purpose field by default */
+  #purposeLabel,#purposeLabel2, #purpose , #purpose2 {
+    display: none;
+  }
+  
+  @media screen and (max-width: 500px) {
+    form {
+      padding: 10px;
+    }
+  }
+  
+  #noteForm span{
+    display: flex;
+  }
+.sp{
+  /* background-color: red; */
+  display: flex;
+  position: absolute; 
+  top: 6%;   
+}
+.sp form{
+  position: fixed;
+  /* background-color: red; */
+}
+#imagePreviews img{
+  position: relative;
+  top: 70%;
+  right:-130%;
+    /* margin-left: -30%;  */
+    max-width: 150px;   
+    max-height: 150px;   
+  border: 4px solid red;
+  }
+  #imagePreviews{
+    /* display: block; */
+  }
+form .success{
+  color: green;
+}
