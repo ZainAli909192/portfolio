@@ -15,8 +15,9 @@ body {
 .card-list {
   /* background-color: red; */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   max-width: 1250px;
+  /* max-width: 750px; */
   margin: 30px 70px;
   /* padding: 60px 20px; */
   gap: 20px;
@@ -42,9 +43,10 @@ body {
 
 .card-list .card-item img {
   width: 100%;
-  aspect-ratio: 13/9;
+  /* height: 150%; */
+  aspect-ratio: 13/10;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: fit;
 }
 
 .card-list span {
@@ -95,13 +97,17 @@ hr {
   border-radius: 5%;
   margin-top: 15px;
   transition: 0.2s ease;
-  animation: fade 2s ease-in-out infinite;
+  /* animation: fade 2s ease-in-out infinite; */
   position: relative;
   bottom: 0px;
   left: 0px;
   z-index: 10;
-}
+  background: #159cc2;
+  color: #fff;
+  background-color: #4CAF50;
+  background-color: #4169E1;
 
+}
 @keyframes fade {
   0% {
     background-color: white;
@@ -116,6 +122,7 @@ hr {
 
 .card-list .card-item:hover .arrow {
   background: #159cc2;
+  background: #0000FF;
   color: #fff;
 }
 
@@ -137,4 +144,23 @@ hr {
   font-weight: 700;
   font-size: 21px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnn{
+  width: 100px;
+  margin-bottom: 4px;
+  margin-left: 10%;
+  /* background: #e3d4db;
+  background-color: #0c97e2; */
+
+  padding: 14px 10px;
+  border: none;
+  color: black;
+  border-radius: 16px;
+  border: 2px solid blue;
+transition: all 1s;
+}
+.btnn:hover{
+  background-color: blue;
+  color: white;
 }
