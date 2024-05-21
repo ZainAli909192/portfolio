@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title>Certificates </title>
+    <title>All Certificates </title>
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/form.css">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
